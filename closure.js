@@ -52,4 +52,58 @@ let counter1 = makeCounter();
 counter1.increment();
 counter1.increment();
 counter1.getValue();
-console.log(counter1)
+ 
+//arguments & ...
+function getMaxNum() {
+    console.log(arguments);
+}
+
+getMaxNum([1,2,4,5,6,2,12,2]);
+let arr = [1,2,4,5,6,2,12,2];
+Math.max(...arr); // 12
+
+// 매개변수에 기본값을 넣어주고 싶을 경우?
+// Default Parameter를 할당해줄 수 있습니다. (ES6)
+function getRoute(destination, depature = 'ICN') {
+    return '출발지: ' + depature + ',' + '도착지: ' + destination; 
+}
+
+getRoute('NYC'); // 출발지: ICN,도착지: NYC 출력.
+
+//Object Oriented JavaScript
+// function Car(barnd, name, color) { //ES5
+//     //인스턴스가 만들어질 때 실행되는 코드
+//     this.brand = brand;
+//     this.name = name;
+//     this.color = color;
+// }
+
+// Car.prototype.refuel = function() {
+
+// }
+
+// Car.prototype.drive = function() {
+
+// }
+
+
+ 
+class Car() { //ES6
+    constructor(brand, name, color) { 
+        this.brand = brand;
+        this.name = name;
+        this.color = color;
+    }
+
+    refuel() {
+
+    }
+
+    drive() {
+
+    }
+}
+
+let bmw = new Car('BMW', 'MINI', 'WHITE');
+bmw.brand;
+bmw.refuel();
