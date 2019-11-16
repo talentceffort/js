@@ -29,7 +29,7 @@ var obj = {
 }
 obj.b();
 
-
+//////////////////////이해해보기
 function a(x, y, z) {
     console.log(this, x, y, z)
 }
@@ -46,7 +46,7 @@ c(1, 2, 3)
 
 var d = a.bind(b, 1, 2);
 d(3)
-
+//////////////////////////////
 
 var callback = function() {
     console.dir(this)
