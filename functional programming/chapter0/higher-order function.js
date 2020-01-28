@@ -9,6 +9,7 @@ const log = console.log
 
 const apply1 = f => f(1);
 const add2 = a => a + 2
+
 log(apply1(add2)) // 3
 log(apply1(a => a - 1)) // 0
 
@@ -23,5 +24,5 @@ times(a => log(a + 10), 3)
 //  함수를 만들어 리턴하는 함수 (클로저를 만들어 리턴하는 함수)
 const addMaker = a => b => a + b
 const add10 = addMaker(10)
-log(add10(5))
+log(add10(5)) //클로저는 a를 기억하고 있음.
 log(add10(10))
