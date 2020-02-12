@@ -1,0 +1,16 @@
+{
+  "name": "middlewares",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin",
+    "test": "mocha $(find ./ -name \"*.spec.js\")"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "should": "^13.2.3"
+  }
+}
