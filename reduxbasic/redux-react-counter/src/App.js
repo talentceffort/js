@@ -1,10 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from './components/Counter'
+import Option from './components/Option'
+import Buttons from './components/Buttons'
 
 function App() {
   return (
-    <div>hello world</div>
+    <div>
+      <Counter />
+      <Option />
+      <Buttons />
+    </div>
   );
 }
 
