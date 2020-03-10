@@ -22,7 +22,6 @@ class TodoList extends Component {
 
     return (
       <div>
-        <h1>type: {this.props.type}</h1>
         {viewTodo.map((todo) => {
           return (
             <div key={todo.key}>

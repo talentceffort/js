@@ -26,7 +26,7 @@ const initialState = {
     key: 4,
     isCompleted: false,
   }],
-  type: 'all'
+  type: 'all',
 }
 
 const todoReducer = (state = initialState, action) => {
