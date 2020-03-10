@@ -11,7 +11,6 @@ const devTools =
 
 const store = createStore(todoReducer, devTools)
 
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

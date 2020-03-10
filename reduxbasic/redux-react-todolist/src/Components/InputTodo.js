@@ -13,12 +13,18 @@ class InputTodo extends Component {
     })
   }
 
+  onClickResetInput = () => {
+    this.setState({
+      inputValue: ''
+    })
+  }
+
   render() {
     return (
       <div>
         <input value={this.state.inputValue} onChange={this.onChangeInput} placeholder="add todo here"></input>
         <button onClick={() => this.props.onAddTodo(this.state.inputValue)}>Add</button>
-        <button onClick={() => this.props.onResetValue}>Cancle</button>
+        <button onClick={this.onClickResetInput}>Cancle</button>
       </div>
     )
   }
